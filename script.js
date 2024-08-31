@@ -14,7 +14,7 @@ document.getElementById('subirArchivo').addEventListener('click', async () => {
         return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
     };
 
-    // Crear una expresión regular para buscar los lenguajes con delimitadores de palabra
+    // Expresión regular para buscar los lenguajes con delimitadores de palabra
     const regexPattern = `\\b(${lenguajes.map(escapeRegExp).join('|')})\\b`;
     const regex = new RegExp(regexPattern, 'g');
 
