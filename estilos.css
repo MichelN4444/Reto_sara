@@ -45,12 +45,14 @@ button:hover {
 #resultados {
     margin-top: 20px;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1900px; /* Aumenta el ancho máximo */
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px; /* Aumenta el espacio entre columnas */
     text-align: left;
+    padding: 0 20px; /* Añade espacio interno horizontal */
 }
+
 
 #resultados p {
     background-color: #fff;
