@@ -11,7 +11,16 @@
     <input type="file" id="seleccionarArchivo" accept=".txt">
     <button id="subirArchivo">Procesar archivo(en espera de cambios)</button>
     <div id="resultados"></div>
-
+    <button id="scrollToTop" title="Volver arriba">&uarr;</button>
     <script src="script.js"></script>
+    <script>
+        // JavaScript para el botón de volver arriba
+        document.getElementById('scrollToTop').addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
 </body>
 </html>
